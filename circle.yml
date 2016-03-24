@@ -52,7 +52,7 @@ test:
     # activate plugin 
       - ./wp-cli.phar plugin activate $PLUGIN_NAME --path=$WP_CORE_DIR
 
-#deployment:
+deployment:
   production:
     branch: master
     commands:
