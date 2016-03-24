@@ -53,7 +53,7 @@ test:
       - ./wp-cli.phar plugin activate $PLUGIN_NAME --path=$WP_CORE_DIR
 
 #deployment:
-#  production:
-#    branch: master
-#    commands:
-#      - rsync -avze ssh /home/ubuntu/$PLUGIN_NAME/$PLUGIN_NAME $SSHUSERNAME@$SSHIP:$SERVERPATH
+  production:
+    branch: master
+    commands:
+      - rsync -avze ssh /home/ubuntu/$PLUGIN_NAME/$PLUGIN_NAME $SSHUSERNAME@$SSHIP:$SERVERPATH
