@@ -2,9 +2,9 @@
 /*
 Plugin Name: MicroNet simple API
 Description: This is a simple api just for testing
-Plugin URI: http://#
-Author: Author
-Author URI: http://#
+Plugin URI: http://agus-demo.xyz/plugin/simple-micronet-api
+Author: Agus Priyanto
+Author URI: https://wpbanget.com
 Version: 1.0
 License: GPL2
 Text Domain: micronet-api
@@ -49,6 +49,7 @@ function micronet_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'micronet_scripts' );
 
+// AJAX response
 function _micronet_api_callback() {
 	
 	$endpoint = 'http://api.micronetonline.com/v1/associations(1896)/members';
