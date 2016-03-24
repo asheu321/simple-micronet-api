@@ -1,0 +1,32 @@
+/**
+ * Ajax loading style
+ */
+.micronet-container {
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+
+	.micronet-loading {
+	    text-align: center;
+	}
+
+	.micronet-list-item {
+	    border: 1px solid #999;
+	    box-sizing: border-box;
+	    margin-bottom: 15px;
+	    padding: 10px;
+
+	    .micronet-sub-item {
+		    border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+		    padding: 5px 0;
+
+	    	& > label {
+			    color: #222;
+			    display: inline-block;
+			    font-weight: bold;
+			    min-width: 250px;
+			}
+	    }
+	}
+}
+
